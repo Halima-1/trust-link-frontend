@@ -14,6 +14,7 @@ Please report security issues privately by contacting the maintainers through th
 - Use secure environment variables for wallet and API configuration.
 - Avoid exposing private keys or secrets in code, logs, or issues.
 - Review third-party integrations and wallet interactions carefully.
+- Refer to [Security Model documentation](docs/SECURITY_MODEL.md) for a detailed threat model and trust assumptions.
 
 ## Response Expectations
 

@@ -91,7 +91,10 @@ trustlink-frontend/
 │   ├── useWallet.ts
 │   └── useTracking.ts
 │
-└── types/                          # Shared TypeScript types
+├── types/                          # Shared TypeScript types
+└── docs/                           # Documentation
+    ├── CONTRACT_ERRORS.md          # Contract error code reference
+    └── SECURITY_MODEL.md           # Security model & threat analysis
 ```
 
 ---
@@ -246,6 +249,13 @@ TrustLink uses **shadcn/ui** components built on Radix UI primitives, styled wit
 - All payment-facing pages must show the escrow contract address in a visible `trust badge`.
 - State changes (Funded, Shipped, Completed) must trigger visible feedback — no silent updates.
 - Skeleton loaders for all async data — no layout shift.
+
+## 📚 Documentation
+
+- [Architecture Overview](./ARCHITECTURE.md) - High-level system design.
+- [Contract Error Reference](./docs/CONTRACT_ERRORS.md) - Numeric error codes & resolutions.
+- [Security Model](./docs/SECURITY_MODEL.md) - Threat model and trust assumptions.
+- [Accessibility Policy](./ACCESSIBILITY.md) - Standards for inclusive design.
 
 ---
 

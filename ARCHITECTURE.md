@@ -70,3 +70,9 @@ flowchart TD
 5. Tracking and status updates are rendered from the escrow and timeline components.
 
 This structure keeps page routes thin, UI components reusable, and wallet/escrow logic isolated for easier maintenance.
+
+## Security Considerations
+
+The frontend implements critical security patterns to prevent re-entrancy at the UI level, handle large integer precision for asset amounts, and ensure all sensitive operations are backed by cryptographic signatures. For a detailed breakdown, see the [Security Model documentation](docs/SECURITY_MODEL.md).
+
+For a reference of numeric contract error codes and their resolutions, see the [Contract Error Reference](./docs/CONTRACT_ERRORS.md).
